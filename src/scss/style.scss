@@ -1,26 +1,15 @@
 /*  Structure
-
-1.  Import
-2.  General styles
-3.  Burger
-4.  Form  
-5.  Header
-6.  Language switcher
-7.  Slider
-8.  Sliderx
-9.  Footer
-10. Scrool to top
-
+1. Import
+2. General styles
 */
 
+/* 1. Import */
 @import "../libs/bootstrap/_bootstrap.min";
 @import "../libs/owlCarousel2-2.3.4/dist/assets/_owl.carousel.min";
 @import "../libs/owlCarousel2-2.3.4/dist/assets/_owl.theme.default.min";
-
-/* 1.  Fonts including */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* 2.  General styles */
+/* 2. General styless */
 $padding-standart: 50px 0px;
 $padding-small: 40px 0px;
 $typography-color-standart: 16px;
