@@ -1,0 +1,62 @@
+/*  Structure
+
+1.  Import
+2.  General styles
+3.  Burger
+4.  Form  
+5.  Header
+6.  Language switcher
+7.  Slider
+8.  Sliderx
+9.  Footer
+10. Scrool to top
+
+*/
+
+@import "../libs/bootstrap/_bootstrap.min";
+@import "../libs/owlCarousel2-2.3.4/dist/assets/_owl.carousel.min";
+@import "../libs/owlCarousel2-2.3.4/dist/assets/_owl.theme.default.min";
+
+/* 1.  Fonts including */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* 2.  General styles */
+$padding-standart: 50px 0px;
+$padding-small: 40px 0px;
+$typography-color-standart: 16px;
+$black: #000;
+$white: #fff;
+$blue: #006fb4;
+$blueLight: #a1dbff;
+$textCOlor: #555;
+$textBlue: #0d6cbf;
+$mediaLg: 992px;
+$mediaXlg: 1200px;
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
