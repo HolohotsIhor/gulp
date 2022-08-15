@@ -49,3 +49,10 @@ $mediaXlg: 1200px;
     transform: translate3d(0, 0, 0);
   }
 }
+
+.header {
+
+  &__logo {
+    //display: none;
+  }
+}
