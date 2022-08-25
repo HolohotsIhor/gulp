@@ -1,58 +1,21 @@
-/*  Structure
-1. Import
-2. General styles
-*/
+@import "../libs/reset/reset";
+@import "./import";
+@import "./variables";
+@import "../libs/burger/burger";
+@import "../libs/scroll-to-top/scroll-to-top";
 
-/* 1. Import */
-@import "../libs/bootstrap/_bootstrap.min";
-@import "../libs/owlCarousel2-2.3.4/dist/assets/_owl.carousel.min";
-@import "../libs/owlCarousel2-2.3.4/dist/assets/_owl.theme.default.min";
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-/* 2. General styless */
-$padding-standart: 50px 0px;
-$padding-small: 40px 0px;
-$typography-color-standart: 16px;
-$black: #000;
-$white: #fff;
-$blue: #006fb4;
-$blueLight: #a1dbff;
-$textCOlor: #555;
-$textBlue: #0d6cbf;
-$mediaLg: 992px;
-$mediaXlg: 1200px;
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+body {
+  font-size: $font-size;
+  color: $font-color;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
 
   &__logo {
-    //display: none;
+
+    @media (min-width: $screen-md) {
+      //display: none;
+    }
   }
 }

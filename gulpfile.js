@@ -27,7 +27,7 @@ const path={
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
 	clean: "./" + project_folder + "/"
-}
+};
 
 // Plugins variables
 const {src, dest} = require('gulp'),
@@ -65,7 +65,7 @@ function html() {
 		.pipe(fileinclude())
 		.pipe(webphtml())
 		.pipe(dest(path.build.html))
-		.pipe(browsersync.stream())
+		.pipe(browsersync.stream());
 }
 
 // Prepare Images
@@ -79,7 +79,7 @@ function images() {
 		.pipe(dest(path.build.img))
 		.pipe(src(path.src.img))
 		.pipe(dest(path.build.img))
-		.pipe(browsersync.stream())
+		.pipe(browsersync.stream());
 }
 
 // Prepare CSS
@@ -113,7 +113,7 @@ function css() {
 		)
 		// Onload file
 		.pipe(dest(path.build.css))
-		.pipe(browsersync.stream())
+		.pipe(browsersync.stream());
 }
 
 // Prepare JS
@@ -128,7 +128,7 @@ function js() {
 			})
 		)
 		.pipe(dest(path.build.js))
-		.pipe(browsersync.stream())
+		.pipe(browsersync.stream());
 }
 
 
